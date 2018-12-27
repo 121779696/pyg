@@ -1,22 +1,22 @@
 package com.pinyougou.sellergoods.service;
 import java.util.List;
-import java.util.Map;
-
-import com.pinyougou.pojo.TbBrand;
 
 import entity.PageResult;
+import com.pinyougou.pojo.TbItem;
+
+
 /**
  * 服务层接口
  * @author Administrator
  *
  */
-public interface BrandService {
+public interface ItemService {
 
 	/**
 	 * 返回全部列表
 	 * @return
 	 */
-	public List<TbBrand> findAll();
+	public List<TbItem> findAll();
 	
 	
 	/**
@@ -29,13 +29,13 @@ public interface BrandService {
 	/**
 	 * 增加
 	*/
-	public void add(TbBrand brand);
+	public void add(TbItem item);
 	
 	
 	/**
 	 * 修改
 	 */
-	public void update(TbBrand brand);
+	public void update(TbItem item);
 	
 
 	/**
@@ -43,7 +43,7 @@ public interface BrandService {
 	 * @param id
 	 * @return
 	 */
-	public TbBrand findOne(Long id);
+	public TbItem findOne(Long id);
 	
 	
 	/**
@@ -58,7 +58,6 @@ public interface BrandService {
 	 * @param pageSize 每页记录数
 	 * @return
 	 */
-	public PageResult findPage(TbBrand brand, int pageNum, int pageSize);
-    // 品牌下拉框数据
-	public List<Map> selectOptionList();
+	public PageResult findPage(TbItem item, int pageNum, int pageSize);
+	
 }

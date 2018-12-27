@@ -30,5 +30,5 @@ public interface TbSpecificationMapper {
 
     int updateByPrimaryKey(TbSpecification record);
 
-    List<Map> selectOptionList();
+    public  List<Map> selectOptionList();
 }
